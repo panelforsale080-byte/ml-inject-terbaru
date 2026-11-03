@@ -1,6 +1,5 @@
 package Ptrace;
 
-import android.annotation.Nullable;
 import android.content.ContentProvider;
 import android.content.ContentValues;
 import android.content.Context;

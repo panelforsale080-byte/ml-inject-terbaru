@@ -33,11 +33,12 @@ android {
         }
     }
 
-    externalNativeBuild {
-        ndkBuild {
-            path = file("src/main/jni/Android.mk")
-        }
-    }
+    // NDK rebuild optional; prebuilt librizeyt.so in jniLibs is used for CI stability.
+    // externalNativeBuild {
+    //     ndkBuild {
+    //         path = file("src/main/jni/Android.mk")
+    //     }
+    // }
 
     packaging {
         jniLibs {
